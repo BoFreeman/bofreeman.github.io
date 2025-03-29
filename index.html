@@ -3,103 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ME CHAOS SUPREME | Parts</title>
+  <title>CHAOS STUDIOS | ME CHAOS SUPREME</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white font-sans">
 
   <!-- HERO SECTION -->
   <section class="text-center py-20 px-4">
-    <h1 class="text-4xl font-bold mb-6">ME CHAOS SUPREME | Parts</h1>
-    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-      Explore each part of the chaotic journey and download either the script or the text version of the scenes.
+    <img src="logo-spiral.jpg" alt="Chaos Studios Logo" class="mx-auto w-32 mb-6 rounded-full shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-wider">CHAOS STUDIOS</h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+      From script to screen… into <span class="italic font-semibold">CHAOS SUPREME</span>.
     </p>
   </section>
 
-  <!-- PART I: PUMP AND DUMP EVEN HARDER -->
-  <section class="py-16 px-6 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Part I: PUMP AND DUMP EVEN HARDER</h2>
-      <img src="part1-image.jpg" alt="Part I Image" class="mx-auto w-48 h-48 rounded-full mb-6">
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6">
-        The introduction to the chaotic universe of MAFAlord. A corrupt financial launch and a world spinning out of control. 
+  <!-- FEATURE PROJECT -->
+  <section class="text-center py-16 px-4 md:px-12 bg-gray-900">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Feature Project: <span class="italic">ME CHAOS SUPREME</span></h2>
+    <video class="mx-auto rounded-xl shadow-xl mb-6" width="640" height="360" controls>
+      <source src="me_chaos_teaser_placeholder.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+      A dark satirical odyssey through the downfall of reason, sweetened with syrup and bot prophets. Witness the absurdity of power, propaganda, and the march toward Mars.
+    </p>
+  </section>
+
+  <!-- ENSEMBLE POSTER SECTION -->
+  <section id="ensemble-poster" class="bg-black text-white py-16 px-4 md:px-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-wide">The World of <span class="italic">ME CHAOS SUPREME</span></h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-8">
+        An absurdist mural of the new dystopia — featuring MAFALord, Elon Prime, MAFAnka the Blessed, TruthTV prophets, the MAFA Children’s Choir, and more.
+        Welcome to the world of <span class="italic">ME CHAOS SUPREME</span>.
       </p>
-      <!-- Buttons -->
-      <div class="flex justify-center gap-4 mb-8">
-        <a href="part1-script.txt" download class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl">Download Script</a>
-        <a href="part1-text.txt" download class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl">Download Text</a>
+      <div class="relative group">
+        <img
+          src="macron_image_url.jpg"  <!-- Replace with the path of the Macron image -->
+          alt="MACRON"
+          class="mx-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500 cursor-pointer"
+          onclick="openPosterModal()"
+        />
+        <p class="mt-4 text-gray-300 text-xl">MACRON: The Woke Revolutionary</p>
+        <p class="text-lg text-gray-400 italic">Challenging power, representing rebellion.</p>
       </div>
     </div>
   </section>
 
-  <!-- PART II: ONE NATION UNDER GREASE -->
-  <section class="py-16 px-6 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Part II: ONE NATION UNDER GREASE</h2>
-      <img src="part2-image.jpg" alt="Part II Image" class="mx-auto w-48 h-48 rounded-full mb-6">
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6">
-        The world of MAFAlord takes a greasy, authoritarian turn as he enacts his bizarre policies and rallies the nation.
-      </p>
-      <!-- Buttons -->
-      <div class="flex justify-center gap-4 mb-8">
-        <a href="part2-script.txt" download class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl">Download Script</a>
-        <a href="part2-text.txt" download class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl">Download Text</a>
+  <!-- POSTER MODAL (Fullscreen Zoom) -->
+  <div id="posterModal" class="fixed inset-0 bg-black bg-opacity-90 hidden justify-center items-center z-50">
+    <span class="absolute top-4 right-6 text-white text-4xl cursor-pointer" onclick="closePosterModal()">&times;</span>
+    <img src="poster-ensemble-final.jpg" class="max-w-full max-h-full rounded-xl shadow-xl" />
+  </div>
+
+  <!-- VIRTUAL CREW SECTION -->
+  <section id="virtual-crew" class="bg-gray-900 text-white py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-10 tracking-wide">Meet the Virtual Crew</h2>
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🎥 KubrickBot</h3><p class="text-gray-400 italic">Cinematic framing, dystopian timing</p><p class="mt-2 text-sm text-gray-300">“Every frame a mind game.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🤯 Vonnegut Narrator</h3><p class="text-gray-400 italic">Absurdism & satirical voice</p><p class="mt-2 text-sm text-gray-300">“So it goes.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🪐 Villeneuve.Dune</h3><p class="text-gray-400 italic">Mars sequences, desert silence</p><p class="mt-2 text-sm text-gray-300">“Silence speaks in sandstorms.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🎻 Alan Parsons AI</h3><p class="text-gray-400 italic">Musical layering & mood</p><p class="mt-2 text-sm text-gray-300">“Sound creates dimension.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🎬 Mel BrooksGPT</h3><p class="text-gray-400 italic">Historical parody expert</p><p class="mt-2 text-sm text-gray-300">“If you’re going to satirize… go big.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🧠 Super Programmer</h3><p class="text-gray-400 italic">Code, layout, AI logic</p><p class="mt-2 text-sm text-gray-300">“Avoid bugs. Launch chaos.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">👁️ Code Auditor</h3><p class="text-gray-400 italic">Validation & file checks</p><p class="mt-2 text-sm text-gray-300">“No file left behind.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-red-900 transition"><h3 class="text-2xl font-bold mb-2">⚖️ Troy Kohn</h3><p class="text-gray-400 italic">MAFA Esquire & Legal Rewriter</p><p class="mt-2 text-sm text-gray-300">“Justice is what I say it is — and I just said it backwards.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-yellow-900 transition"><h3 class="text-2xl font-bold mb-2">🧮 Alan Weissgold</h3><p class="text-gray-400 italic">MAFA CFO & Number Necromancer</p><p class="mt-2 text-sm text-gray-300">“If the numbers don’t work, I work the numbers.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-pink-800 transition"><h3 class="text-2xl font-bold mb-2">👠 Alina Hottbah</h3><p class="text-gray-400 italic">Legal Diva & TruthTV Litigator</p><p class="mt-2 text-sm text-gray-300">“Objection, your honor — too much reality!”</p></div>
       </div>
     </div>
   </section>
 
-  <!-- PART III: GLADIATORIAL GRINDPORTATION -->
-  <section class="py-16 px-6 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Part III: GLADIATORIAL GRINDPORTATION</h2>
-      <img src="part3-image.jpg" alt="Part III Image" class="mx-auto w-48 h-48 rounded-full mb-6">
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6">
-        The rise of MAFA gladiators, a brutal and chaotic sport for the masses, powered by MAFAlord’s twisted sense of justice.
+  <!-- HARMONY SCULPTURE SECTION -->
+  <section id="harmony-sculpture" class="bg-gradient-to-b from-black via-gray-900 to-green-900 text-white py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-wider">The Harmony Sculpture</h2>
+      <p class="text-lg md:text-xl text-green-200 max-w-3xl mx-auto mb-10">
+        Rising from shattered steel and melted slogans, the Harmony Sculpture is born — a spiral of color, memory, and rebirth. From the torn red threads of the MAFA hat... a butterfly emerges.
       </p>
-      <!-- Buttons -->
-      <div class="flex justify-center gap-4 mb-8">
-        <a href="part3-script.txt" download class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl">Download Script</a>
-        <a href="part3-text.txt" download class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl">Download Text</a>
-      </div>
+      <img src="harmony-sculpture-placeholder.jpg" alt="Harmony Sculpture" class="mx-auto w-full max-w-2xl rounded-2xl shadow-2xl mb-6">
+      <p class="text-green-300 italic text-lg mb-4">“Chaos flipped its wings… back to harmony.”</p>
+      <audio controls class="mx-auto mt-4">
+        <source src="ambient-chant.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p class="text-xs text-gray-400 mt-2">Ambient chant loop · Tibetan throat meditative hum</p>
+    </div>
+  </section>
+  
+  <!-- NOVEL PREVIEW SECTION -->
+  <section id="novel-preview" class="bg-gray-950 text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Read the Novel</h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-6 italic">
+        “The syrup was still warm on his fingers when the drones came…”
+      </p>
+      <p class="text-gray-400 mb-8 max-w-3xl mx-auto">
+        A dark satirical epic by <strong>Bobby Freeman</strong> — co-written with AI — <br>
+        <em>ME CHAOS SUPREME: IDIOCRACY 2.0</em> is a dystopian ride through syrup warfare, trike parades, and authoritarian absurdity.
+      </p>
+      <a href="SCRIPT%20ME%20CHAOS%20SUPREME03262025.pdf" download class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300">
+        📖 Download the Novel (PDF)
+      </a>
     </div>
   </section>
 
-  <!-- PART IV: REEDUCATION OR MEATGRINDER -->
-  <section class="py-16 px-6 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Part IV: REEDUCATION OR MEATGRINDER</h2>
-      <img src="part4-image.jpg" alt="Part IV Image" class="mx-auto w-48 h-48 rounded-full mb-6">
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6">
-        As MAFAlord’s grip tightens, citizens face reeducation camps, where the price of disobedience is horrifyingly clear.
+
+  <!-- JOIN LA RÉSISTANCE SECTION -->
+  <section id="join-resistance" class="bg-black text-white py-20 px-6 border-t-4 border-red-700">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-widest text-red-600">JOIN LA RÉSISTANCE</h2>
+      <p class="text-lg text-gray-300 mb-6 italic">
+        You’ve seen the lies. Now flip the signal.
       </p>
-      <!-- Buttons -->
-      <div class="flex justify-center gap-4 mb-8">
-        <a href="part4-script.txt" download class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl">Download Script</a>
-        <a href="part4-text.txt" download class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl">Download Text</a>
-      </div>
+      <form action="https://example.com/signup" method="POST" class="flex flex-col sm:flex-row justify-center gap-4 max-w-xl mx-auto">
+        <input type="email" name="email" required placeholder="Enter your encoded address"
+          class="px-4 py-3 rounded-md text-black w-full sm:w-2/3 focus:outline-none" />
+        <button type="submit"
+          class="bg-red-700 hover:bg-red-800 text-white font-bold px-6 py-3 rounded-md transition">
+          Join the Underground
+        </button>
+      </form>
+      <p class="text-sm text-gray-500 mt-4">We won’t sell your data. We’re not bots. Yet.</p>
     </div>
   </section>
 
-  <!-- PART V: THE TRIKE REVOLUTION -->
-  <section class="py-16 px-6 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Part V: THE TRIKE REVOLUTION</h2>
-      <img src="part5-image.jpg" alt="Part V Image" class="mx-auto w-48 h-48 rounded-full mb-6">
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6">
-        The Trike Revolution takes over the streets, led by MAFAlord’s vision of mass chaos and control through absurd transport.
-      </p>
-      <!-- Buttons -->
-      <div class="flex justify-center gap-4 mb-8">
-        <a href="part5-script.txt" download class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-xl">Download Script</a>
-        <a href="part5-text.txt" download class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl">Download Text</a>
-      </div>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer class="bg-gray-800 text-center text-gray-400 py-6 text-sm">
     © 2025 CHAOS STUDIOS — Created by Bobby Freeman · All satire · All pseudonymous.
   </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    function openPosterModal() {
+      document.getElementById('posterModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePosterModal() {
+      document.getElementById('posterModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
 
 </body>
 </html>
