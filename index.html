@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chaos Studios - ME CHAOS SUPREME</title>
   <style>
     body {
@@ -11,87 +10,43 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
 
     section {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
+      padding: 80px 20px;
       text-align: center;
-      flex-wrap: wrap;
     }
 
     .poster-section img,
     .logo-section img,
     .spiral-img {
-      max-width: 100%;
+      max-width: 90%;
       height: auto;
-      margin: 20px;
+      margin: 20px auto;
       display: block;
     }
 
     .harmony-caption {
       font-size: 1.5em;
-      margin-top: 30px;
+      margin-top: 20px;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.6;
       color: #b0e0e6;
+      padding: 20px;
     }
 
     .spiral-wrapper {
-      max-width: 400px;
-      margin: 0 auto;
-      animation: fadeInUp 3s ease-out;
-      position: relative;
+      max-width: 80%;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
     }
 
     .spiral-img {
       width: 100%;
-      filter: drop-shadow(0 0 10px rgba(0,255,255,0.3));
-      transition: transform 3s, filter 3s;
-    }
-
-    .spiral-img:hover {
-      transform: scale(1.05) rotate(1deg);
-      filter: drop-shadow(0 0 20px rgba(0,255,255,0.5));
-    }
-
-    .mafa-hat {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      width: 80px;
-      animation: pierce 3s ease-out 1s forwards;
-      opacity: 0;
-    }
-
-    @keyframes pierce {
-      0% {
-        transform: translateX(-50%) translateY(-50%) scale(0.5);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(-50%) translateY(-160%) scale(1);
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      height: auto;
     }
 
     audio::-webkit-media-controls-panel {
@@ -102,9 +57,12 @@
       margin-top: 40px;
     }
 
-    video {
-      margin-top: 40px;
-      width: 100%;
+    .reveal-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -130,7 +88,7 @@
 
   <section class="video-section">
     <h2>Teaser Trailer</h2>
-    <video controls>
+    <video width="640" height="360" controls>
       <source src="me_chaos_teaser_placeholder.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -138,9 +96,7 @@
 
   <section class="reveal-section">
     <div class="spiral-wrapper">
-      <!-- Only one Harmony image is referenced here -->
       <img src="harmony-sculpture.jpg" alt="Harmony Spiral Sculpture" class="spiral-img">
-      <img src="mafa-hat-image.jpg" alt="MAFA Hat" class="mafa-hat">
     </div>
     <div class="harmony-caption">
       From chaos, the spiral of harmony ascends — piercing the old world.
