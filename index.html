@@ -37,9 +37,21 @@
         An absurdist mural of the new dystopia — featuring MAFALord, Elon Prime, MAFAnka the Blessed, TruthTV prophets, the MAFA Children’s Choir, and more.
         Welcome to the world of <span class="italic">ME CHAOS SUPREME</span>.
       </p>
+      <!-- Existing Ensemble Image -->
       <div class="relative group">
         <img
-          src="macron_image_url.jpg"  <!-- Replace with the path of the Macron image -->
+          src="poster-ensemble-final.jpg"  <!-- Replace with the path of the existing ensemble image -->
+          alt="ME CHAOS SUPREME Ensemble Poster"
+          class="mx-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500 cursor-pointer"
+          onclick="openPosterModal()"
+        />
+        <p class="mt-4 text-gray-300 text-xl">The full ensemble</p>
+      </div>
+
+      <!-- Add Macron image to Ensemble -->
+      <div class="relative group mt-8">
+        <img
+          src="macron_image_url.jpg"  <!-- Replace with Macron's image URL -->
           alt="MACRON"
           class="mx-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500 cursor-pointer"
           onclick="openPosterModal()"
@@ -91,7 +103,7 @@
       <p class="text-xs text-gray-400 mt-2">Ambient chant loop · Tibetan throat meditative hum</p>
     </div>
   </section>
-
+  
   <!-- NOVEL PREVIEW SECTION -->
   <section id="novel-preview" class="bg-gray-950 text-white py-20 px-6">
     <div class="max-w-4xl mx-auto text-center">
@@ -108,6 +120,7 @@
       </a>
     </div>
   </section>
+
 
   <!-- JOIN LA RÉSISTANCE SECTION -->
   <section id="join-resistance" class="bg-black text-white py-20 px-6 border-t-4 border-red-700">
@@ -128,6 +141,7 @@
     </div>
   </section>
 
+
   <!-- FOOTER -->
   <footer class="bg-gray-800 text-center text-gray-400 py-6 text-sm">
     © 2025 CHAOS STUDIOS — Created by Bobby Freeman · All satire · All pseudonymous.
@@ -144,6 +158,7 @@
       document.body.style.overflow = 'auto';
     }
   </script>
+
 
 </body>
 </html>
