@@ -17,6 +17,19 @@
       text-align: center;
     }
 
+    .logo-section img {
+      max-width: 250px; /* Adjust logo size */
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 4em; /* Increase project title size */
+      margin: 20px 0;
+      color: white;
+    }
+
     .poster-section img,
     .logo-section img,
     .spiral-img {
@@ -28,25 +41,62 @@
 
     .harmony-caption {
       font-size: 1.5em;
-      margin-top: 20px;
+      margin-top: 30px;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.6;
       color: #b0e0e6;
-      padding: 20px;
     }
 
     .spiral-wrapper {
-      max-width: 80%;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+      animation: fadeInUp 3s ease-out;
+      position: relative;
     }
 
     .spiral-img {
       width: 100%;
-      height: auto;
+      filter: drop-shadow(0 0 10px rgba(0,255,255,0.3));
+      transition: transform 3s, filter 3s;
+    }
+
+    .spiral-img:hover {
+      transform: scale(1.05) rotate(1deg);
+      filter: drop-shadow(0 0 20px rgba(0,255,255,0.5));
+    }
+
+    .mafa-hat {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 80px;
+      animation: pierce 3s ease-out 1s forwards;
+      opacity: 0;
+    }
+
+    @keyframes pierce {
+      0% {
+        transform: translateX(-50%) translateY(-50%) scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(-50%) translateY(-160%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     audio::-webkit-media-controls-panel {
@@ -55,14 +105,6 @@
 
     audio {
       margin-top: 40px;
-    }
-
-    .reveal-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-top: 20px;
     }
   </style>
 </head>
@@ -76,6 +118,7 @@
   <section class="poster-section">
     <img src="poster-ensemble-final.jpg" alt="Ensemble Poster">
     <img src="poster-arizona.jpg" alt="Arizona Rally Poster">
+    <img src="harmony-sculpture.jpg" alt="Harmony Sculpture">
   </section>
 
   <section class="audio-section">
@@ -97,6 +140,7 @@
   <section class="reveal-section">
     <div class="spiral-wrapper">
       <img src="harmony-sculpture.jpg" alt="Harmony Spiral Sculpture" class="spiral-img">
+      <img src="mafa-hat.png" alt="MAFA Hat" class="mafa-hat">
     </div>
     <div class="harmony-caption">
       From chaos, the spiral of harmony ascends — piercing the old world.
