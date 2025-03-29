@@ -1,101 +1,74 @@
-<!-- CHAOS STUDIOS HOMEPAGE -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ME CHAOS SUPREME</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-gray-900 text-yellow-100 font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHAOS STUDIOS | ME CHAOS SUPREME</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
 
-    <!-- AUDIO -->
-    <audio autoplay loop id="harmonyAudio">
-      <source src="audio/tibetan-chanting.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+  <!-- HERO SECTION -->
+  <section class="text-center py-20 px-4">
+    <img src="logo-spiral.jpg" alt="Chaos Studios Logo" class="mx-auto w-32 mb-6 rounded-full shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-wider">CHAOS STUDIOS</h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+      From script to screen… into <span class="italic font-semibold">CHAOS SUPREME</span>.
+    </p>
+  </section>
 
-    <!-- HERO BANNER -->
-    <section class="relative h-screen flex items-center justify-center bg-black">
-      <img src="images/mural-poster-v2.jpg" alt="Chaos Supreme Mural" class="absolute inset-0 w-full h-full object-cover opacity-40">
-      <div class="relative z-10 text-center px-6">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">ME CHAOS SUPREME</h1>
-        <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-6 italic">
-          "Through madness… sweetened with lies, half-truths and plenty of maple syrup… into CHAOS SUPREME… and finally… HARMONY."
-        </p>
-        <div class="space-x-4">
-          <button class="bg-yellow-500 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-600">Watch the Teaser</button>
-          <button class="border border-yellow-500 px-6 py-2 rounded-full font-bold hover:bg-yellow-500 hover:text-black">Explore the World</button>
-        </div>
-      </div>
-    </section>
+  <!-- FEATURE PROJECT -->
+  <section class="text-center py-16 px-4 md:px-12 bg-gray-900">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Feature Project: <span class="italic">ME CHAOS SUPREME</span></h2>
+    <video class="mx-auto rounded-xl shadow-xl mb-6" width="640" height="360" controls>
+      <source src="me_chaos_teaser_placeholder.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+      A dark satirical odyssey through the downfall of reason, sweetened with syrup and bot prophets. Witness the absurdity of power, propaganda, and the march toward Mars.
+    </p>
+  </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="py-16 px-6 text-center max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">What is ME CHAOS SUPREME?</h2>
-      <p class="text-lg">
-        A dark comedy political satire written by Bobby Freeman. A world where syrup starts a war, bots ride trikes on Mars, and truth is televised by TruthTV. It’s idiocracy, prophecy, and parody — all in one. This is the satire they warned you about.
+  <!-- ENSEMBLE POSTER SECTION -->
+  <section id="ensemble-poster" class="bg-black text-white py-16 px-4 md:px-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-wide">The World of <span class="italic">ME CHAOS SUPREME</span></h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-8">
+        An absurdist mural of the new dystopia — featuring MAFALord, Elon Prime, MAFAnka the Blessed, TruthTV prophets, the MAFA Children’s Choir, and more.
+        Welcome to the world of <span class="italic">ME CHAOS SUPREME</span>.
       </p>
-    </section>
-
-    <!-- TEASER TRAILER -->
-    <section class="bg-gray-800 py-16 px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Teaser Trailer (Coming Soon)</h2>
-      <div class="w-full max-w-2xl mx-auto">
-        <div class="aspect-w-16 aspect-h-9 bg-black border-2 border-yellow-500 flex items-center justify-center">
-          <span class="text-yellow-500">[ Trailer Placeholder ]</span>
-        </div>
-        <p class="mt-4 italic text-yellow-300">“We didn’t start the chaos. We monetized it.” — MAFALord</p>
+      <div class="relative group">
+        <img
+          src="poster-ensemble-final.jpg"
+          alt="ME CHAOS SUPREME Ensemble Poster"
+          class="mx-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500 cursor-pointer"
+          onclick="openPosterModal()"
+        />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- MEET THE MAKERS -->
-    <section class="py-16 px-6 text-center max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Meet the Makers</h2>
-      <p class="mb-4 text-lg font-semibold">Bobby Freeman (Pseudonymous Creator)</p>
-      <p class="mb-6 italic">“A voice from the underground. A whisper of order through disorder.”</p>
-      <p class="font-semibold mb-2">Virtual Assistant Directors:</p>
-      <ul class="space-y-1">
-        <li>🎬 Kubrick Agent – "Full Metal Jacket", "A Clockwork Orange"</li>
-        <li>🧠 Dr. Strangelove Assistant</li>
-        <li>🎛️ Alan Parsons Music Mixer</li>
-        <li>🚀 Villeneuve & Luc Besson for Mars Dystopia</li>
-        <li>🎭 Mel Brooks & Spielberg</li>
-      </ul>
-    </section>
+  <!-- POSTER MODAL (Fullscreen Zoom) -->
+  <div id="posterModal" class="fixed inset-0 bg-black bg-opacity-90 hidden justify-center items-center z-50">
+    <span class="absolute top-4 right-6 text-white text-4xl cursor-pointer" onclick="closePosterModal()">&times;</span>
+    <img src="poster-ensemble-final.jpg" class="max-w-full max-h-full rounded-xl shadow-xl" />
+  </div>
 
-    <!-- HARMONY SCULPTURE -->
-    <section class="bg-gradient-to-b from-gray-800 to-black py-20 px-6 text-center text-blue-100">
-      <h2 class="text-3xl font-bold mb-4">The Harmony Sculpture</h2>
-      <p class="max-w-3xl mx-auto mb-6 italic text-lg">
-        “Chaos flipped its wings… and birthed harmony.”
-      </p>
-      <div class="w-full max-w-xl mx-auto rounded-2xl shadow-inner overflow-hidden">
-        <img src="images/harmony-sculpture-transformation.jpg" alt="Harmony Sculpture Metamorphosis">
-      </div>
-      <p class="mt-4 text-sm text-gray-400">(Soothing audio: Tibetan chanting)</p>
-    </section>
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-center text-gray-400 py-6 text-sm">
+    © 2025 CHAOS STUDIOS — Created by Bobby Freeman · All satire · All pseudonymous.
+  </footer>
 
-    <!-- WORLD OF CHAOS -->
-    <section class="py-16 px-6 text-center max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Enter the World of Chaos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="border border-yellow-500 p-4 rounded-xl">🖼️ Poster Gallery</div>
-        <div class="border border-yellow-500 p-4 rounded-xl">📖 Read the Screenplay</div>
-        <div class="border border-yellow-500 p-4 rounded-xl">🎭 TruthTV Broadcasts</div>
-        <div class="border border-yellow-500 p-4 rounded-xl">🧪 Meet the Characters</div>
-        <div class="border border-yellow-500 p-4 rounded-xl">🪙 MAFA Coin</div>
-        <div class="border border-yellow-500 p-4 rounded-xl">🌌 Mars: The Final Market</div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-black py-10 text-center text-gray-500 text-sm">
-      <p>© 2025 Chaos Studios • Created by Bobby Freeman • Anonymous. Satirical. Uncensored.</p>
-    </footer>
-
-  </body>
-</html>
-
-  </body>
+  <!-- SCRIPTS -->
+  <script>
+    function openPosterModal() {
+      document.getElementById('posterModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePosterModal() {
+      document.getElementById('posterModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+</body>
 </html>
