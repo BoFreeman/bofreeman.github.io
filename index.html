@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHAOS STUDIOS | ME CHAOS SUPREME</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- HERO SECTION -->
+  <section class="text-center py-20 px-4">
+    <img src="logo-spiral.jpg" alt="Chaos Studios Logo" class="mx-auto w-32 mb-6 rounded-full shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-wider">CHAOS STUDIOS</h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+      From script to screen… into <span class="italic font-semibold">CHAOS SUPREME</span>.
+    </p>
+  </section>
+
+  <!-- FEATURE PROJECT -->
+  <section class="text-center py-16 px-4 md:px-12 bg-gray-900">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Feature Project: <span class="italic">ME CHAOS SUPREME</span></h2>
+    <video class="mx-auto rounded-xl shadow-xl mb-6" width="640" height="360" controls>
+      <source src="me_chaos_teaser_placeholder.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+      A dark satirical odyssey through the downfall of reason, sweetened with syrup and bot prophets. Witness the absurdity of power, propaganda, and the march toward Mars.
+    </p>
+  </section>
+
+  <!-- ENSEMBLE POSTER SECTION -->
+  <section id="ensemble-poster" class="bg-black text-white py-16 px-4 md:px-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-wide">The World of <span class="italic">ME CHAOS SUPREME</span></h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-8">
+        An absurdist mural of the new dystopia — featuring MAFALord, Elon Prime, MAFAnka the Blessed, TruthTV prophets, the MAFA Children’s Choir, and more.
+        Welcome to the world of <span class="italic">ME CHAOS SUPREME</span>.
+      </p>
+      <div class="relative group">
+        <img
+          src="poster-ensemble-final.jpg"
+          alt="ME CHAOS SUPREME Ensemble Poster"
+          class="mx-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500 cursor-pointer"
+          onclick="openPosterModal()"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTER MODAL (Fullscreen Zoom) -->
+  <div id="posterModal" class="fixed inset-0 bg-black bg-opacity-90 hidden justify-center items-center z-50">
+    <span class="absolute top-4 right-6 text-white text-4xl cursor-pointer" onclick="closePosterModal()">&times;</span>
+    <img src="poster-ensemble-final.jpg" class="max-w-full max-h-full rounded-xl shadow-xl" />
+  </div>
+
+  <!-- VIRTUAL CREW SECTION -->
+  <section id="virtual-crew" class="bg-gray-900 text-white py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-10 tracking-wide">Meet the Virtual Crew</h2>
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🎥 KubrickBot</h3><p class="text-gray-400 italic">Cinematic framing, dystopian timing</p><p class="mt-2 text-sm text-gray-300">“Every frame a mind game.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🤯 Vonnegut Narrator</h3><p class="text-gray-400 italic">Absurdism & satirical voice</p><p class="mt-2 text-sm text-gray-300">“So it goes.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🪐 Villeneuve.Dune</h3><p class="text-gray-400 italic">Mars sequences, desert silence</p><p class="mt-2 text-sm text-gray-300">“Silence speaks in sandstorms.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🎻 Alan Parsons AI</h3><p class="text-gray-400 italic">Musical layering & mood</p><p class="mt-2 text-sm text-gray-300">“Sound creates dimension.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🎬 Mel BrooksGPT</h3><p class="text-gray-400 italic">Historical parody expert</p><p class="mt-2 text-sm text-gray-300">“If you’re going to satirize… go big.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">🧠 Super Programmer</h3><p class="text-gray-400 italic">Code, layout, AI logic</p><p class="mt-2 text-sm text-gray-300">“Avoid bugs. Launch chaos.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-black transition"><h3 class="text-2xl font-bold mb-2">👁️ Code Auditor</h3><p class="text-gray-400 italic">Validation & file checks</p><p class="mt-2 text-sm text-gray-300">“No file left behind.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-red-900 transition"><h3 class="text-2xl font-bold mb-2">⚖️ Troy Kohn</h3><p class="text-gray-400 italic">MAFA Esquire & Legal Rewriter</p><p class="mt-2 text-sm text-gray-300">“Justice is what I say it is — and I just said it backwards.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-yellow-900 transition"><h3 class="text-2xl font-bold mb-2">🧮 Alan Weissgold</h3><p class="text-gray-400 italic">MAFA CFO & Number Necromancer</p><p class="mt-2 text-sm text-gray-300">“If the numbers don’t work, I work the numbers.”</p></div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:bg-pink-800 transition"><h3 class="text-2xl font-bold mb-2">👠 Alina Hottbah</h3><p class="text-gray-400 italic">Legal Diva & TruthTV Litigator</p><p class="mt-2 text-sm text-gray-300">“Objection, your honor — too much reality!”</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARMONY SCULPTURE SECTION -->
+  <section id="harmony-sculpture" class="bg-gradient-to-b from-black via-gray-900 to-green-900 text-white py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-wider">The Harmony Sculpture</h2>
+      <p class="text-lg md:text-xl text-green-200 max-w-3xl mx-auto mb-10">
+        Rising from shattered steel and melted slogans, the Harmony Sculpture is born — a spiral of color, memory, and rebirth. From the torn red threads of the MAFA hat... a butterfly emerges.
+      </p>
+      <img src="harmony-sculpture-placeholder.jpg" alt="Harmony Sculpture" class="mx-auto w-full max-w-2xl rounded-2xl shadow-2xl mb-6">
+      <p class="text-green-300 italic text-lg mb-4">“Chaos flipped its wings… back to harmony.”</p>
+      <audio controls class="mx-auto mt-4">
+        <source src="ambient-chant.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p class="text-xs text-gray-400 mt-2">Ambient chant loop · Tibetan throat meditative hum</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-center text-gray-400 py-6 text-sm">
+    © 2025 CHAOS STUDIOS — Created by Bobby Freeman · All satire · All pseudonymous.
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    function openPosterModal() {
+      document.getElementById('posterModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePosterModal() {
+      document.getElementById('posterModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+</body>
+</html>
